@@ -15,15 +15,10 @@ function start() {
   var headerModar = document.querySelector(".heading-name");
   var desccriptionModar = document.querySelector(".message");
 
-  window.onload = () => {
+  document.body.addEventListener("mousemove", function () {
     document.querySelector(".music").play();
     document.querySelector(".music").volume = 1;
-  };
-  window.onkeypress = (e) => {
-    if (e.charCode === 32) {
-      document.querySelector(".music").play();
-    }
-  };
+  });
 
   document.querySelector(".header").innerHTML = `
         <h1 class="header-name">
