@@ -17,7 +17,7 @@
 html {
   font-size: 62.5%;
   line-height: 1.6rem;
-  font-family: "Pacifico", cursive;
+  font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
 }
 
@@ -43,7 +43,7 @@ canvas {
   overflow: hidden;
   flex-direction: column;
   flex: 1;
-  background-image: linear-gradient(to right top, #5998C5, #419D78);
+  background-image: linear-gradient(to right top, #5998c5, #419d78);
   animation: changeColor 4s ease-in-out;
   -webkit-animation: changeColor 4s ease-in-out;
   -moz-animation: changeColor 4s ease-in-out;
@@ -53,10 +53,10 @@ canvas {
 
 @keyframes changeColor {
   from {
-    background-image: linear-gradient(to left, #5998C5, #419D78);
+    background-image: linear-gradient(to left, #5998c5, #419d78);
   }
   to {
-    background-image: linear-gradient(to top, #5998C5, #419D78);
+    background-image: linear-gradient(to top, #5998c5, #419d78);
   }
 }
 
@@ -111,7 +111,7 @@ canvas {
   height: 50px;
   border: none;
   border-radius: 12px;
-  background-color: #DDA448;
+  background-color: #dda448;
   font-size: 1.7rem;
   padding: 0 16px;
   color: var(--text-color);
@@ -133,7 +133,7 @@ canvas {
 }
 
 .btn--yes:hover {
-  background-color: #6B0F1A;
+  background-color: #6b0f1a;
   color: var(--white-color);
 }
 
@@ -169,7 +169,7 @@ canvas {
 }
 
 .footer-link:hover {
-  color: #5998C5;
+  color: #5998c5;
   cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym49.cur), auto !important;
 }
 
@@ -203,7 +203,7 @@ canvas {
 }
 
 .message-modal {
-  background-color: #419D78;
+  background-color: #419d78;
   width: 540px;
   border-radius: 5px;
 }
@@ -218,7 +218,8 @@ canvas {
 }
 
 .heading-msg {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  font-family: "Times New Roman", Times, serif;
   padding: 16px 16px;
 }
 
@@ -291,7 +292,7 @@ canvas {
 }
 .dashed-loading:before {
   /* z-index: 5; */
-  border: 3px dashed #5998C5;
+  border: 3px dashed #5998c5;
   border-left: 3px solid transparent;
   border-bottom: 3px solid transparent;
   -webkit-animation: dashed 1s linear infinite;
@@ -299,7 +300,7 @@ canvas {
 }
 .dashed-loading:after {
   /* z-index: 10; */
-  border: 3px solid #5998C5;
+  border: 3px solid #5998c5;
   border-left: 3px solid transparent;
   border-bottom: 3px solid transparent;
   -webkit-animation: dashed 1s ease infinite;

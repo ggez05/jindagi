@@ -1,9 +1,3 @@
-/**
- * @author Đông Ngô <dongngo.2000@gmail.com>
- * 
- */
-
-// Không được thay đổi ở đây - Not to change
 $(document).ready(function () {
   setTimeout(function () {
     $(".spinner").fadeOut();
@@ -37,7 +31,6 @@ function start() {
             <i class="ti-heart"></i>
         </h1>
         <p class="header-description">${CONFIGDATA.descriptionHeader}
-            <i class="ti-face-smile"></i>
         </p>`;
   btnYes.innerHTML = `<i class="ti-thumb-up"></i> ${CONFIGDATA.buttonYes}`;
   btnNo.innerHTML = `<i class="ti-thumb-down"></i> ${CONFIGDATA.buttonNo}`;
