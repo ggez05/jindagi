@@ -27,8 +27,8 @@ function start() {
         </h1>
         <p class="header-description">${CONFIGDATA.descriptionHeader}
         </p>`;
-  btnYes.innerHTML = `<i class="ti-thumb-up"></i> ${CONFIGDATA.buttonYes}`;
-  btnNo.innerHTML = `<i class="ti-thumb-down"></i> ${CONFIGDATA.buttonNo}`;
+  btnYes.innerHTML = `${CONFIGDATA.buttonYes}`;
+  btnNo.innerHTML = `${CONFIGDATA.buttonNo}`;
   headerModar.innerHTML = `${CONFIGDATA.titleModar} <i class="ti-heart"></i>`;
   desccriptionModar.innerHTML = `${CONFIGDATA.descriptionModar}`;
 
@@ -44,16 +44,24 @@ function start() {
   };
 
   btnNo.onclick = () => {
-    btnNo.style.top = 100 + "px";
-    btnYes.style.top = 280 + "px";
+    var buttonWidth = btnNo.offsetWidth;
+    var buttonHeight = btnNo.offsetHeight;
+    var x = Math.floor(Math.random() * (window.innerWidth - buttonWidth) * 0.8);
+    var y = Math.floor(
+      Math.random() * (window.innerHeight - buttonHeight) * 0.8
+    );
+    btnNo.style.left = x + "px";
+    btnNo.style.top = y + "px";
   };
 
-  btnNo.onmouseover = (e) => {
-    var x = Math.random() * e.relatedTarget.clientHeight * 0.9;
-    var y = Math.random() * e.relatedTarget.clientWidth * 0.9;
-    btnNo.style.top = x + "px";
-    btnNo.style.right = y + "px";
-  };
+  // btnNo.onmouseover = (e) => {
+  //   try {
+  //     var x = Math.random() * e.relatedTarget.clientHeight * 0.9;
+  //     var y = Math.random() * e.relatedTarget.clientWidth * 0.9;
+  //     btnNo.style.top = x + "px";
+  //     btnNo.style.right = y + "px";
+  //   } catch (error) {}
+  // };
 }
 
 start();

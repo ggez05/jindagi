@@ -1,8 +1,4 @@
-/*
- * Point class
- */
-
-let pinkBoard = document.getElementById("pinkboard")
+let pinkBoard = document.getElementById("pinkboard");
 
 const Point = (function () {
   function Point(x, y) {
